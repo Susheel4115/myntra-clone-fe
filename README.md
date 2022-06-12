@@ -6,7 +6,7 @@ Cloudflare deployment [URL](https://myntra-clone-fe.pages.dev/)
 
 ## Description
 
-This project is clone of Mynta WebApp.
+This project is a clone of Mynta WebApp.
 
 ### Features
 
@@ -14,7 +14,8 @@ This project is clone of Mynta WebApp.
 - SignUp
 - Browse Products based on section
 - Seperate section for men/women/kids
-
+- JWT authentication.
+- Formik and yup for form handling.
 ## Tech Stack
 
 - React
