@@ -1,6 +1,6 @@
 # Myntra Clone
 
-Live Project [URL]https://myntra-clone-fe.pages.dev/
+Cloudflare deployment [URL](https://myntra-clone-fe.pages.dev/)
 
 
 
