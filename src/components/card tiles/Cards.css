@@ -1,0 +1,7 @@
+.img-container {
+  overflow: hidden;
+  cursor: pointer;
+}
+.text {
+  margin-left: -20%;
+}

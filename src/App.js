@@ -8,12 +8,14 @@ import {
   WishList,
   Bag,
 } from "./components";
+
 import { PrivateRoutes } from "./PrivateRoutes";
 function App() {
   return (
     <BrowserRouter>
       <Switch>
         <Route path="/" component={Dashboard} exact />
+        {/* <Route path="/" component={Cards} exact /> */}
         <Route path="/shop/women" component={Dashboard} exact />{" "}
         <Route path="/shop/men" component={Dashboard} exact />{" "}
         <Route path="/shop/kids" component={Dashboard} exact />

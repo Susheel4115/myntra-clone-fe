@@ -4,6 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Grid } from "@material-ui/core";
 
 import { getAllProducts, getFiltersList } from "../../apis/productService";
+import Cards from "../card tiles/Cards.js";
+import Cards1 from "../card tiles/Cards1.js";
 
 import { Slider } from "../Common";
 import { ProductsList, Header, ShopNow } from "../../components";
@@ -180,6 +182,8 @@ export function Dashboard(params) {
           )}
         </>
       )}
+      <Cards />
+      <Cards1 />
     </div>
   );
 }
