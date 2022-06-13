@@ -16,6 +16,8 @@ This project is a clone of Mynta WebApp.
 - Seperate section for men/women/kids
 - JWT authentication.
 - Formik and yup for form handling.
+- Material UI for styling.
+- Context API
 ## Tech Stack
 
 - React
