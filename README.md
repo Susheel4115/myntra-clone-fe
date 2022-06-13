@@ -12,7 +12,6 @@ This project is a clone of Mynta WebApp.
 
 - SignIn
 - SignUp
-- Browse Products based on section
 - Seperate section for men/women/kids
 - JWT authentication.
 - Formik and yup for form handling.
