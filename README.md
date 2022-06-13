@@ -13,7 +13,6 @@ This project is a clone of Mynta WebApp.
 - Seperate section for men/women/kids
 - JWT authentication.
 - Formik and yup for form handling.
-  <<<<<<< HEAD
 
 - Material UI for styling.
 - Context API
@@ -27,4 +26,4 @@ This project is a clone of Mynta WebApp.
 
 ## Improvement
 
--Trying to convert this logic to redux predictable state container
+-Trying to convert this logic to redux predictable state container.
