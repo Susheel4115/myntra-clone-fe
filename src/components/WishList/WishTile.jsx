@@ -11,7 +11,8 @@ import { SnackbarView } from "../Common";
 import { useState } from "react";
 import { ClipLoader } from "react-spinners";
 
-const useStyles = makeStyles(theme => ({
+//creating a custom hook with my own styling
+const useStyles = makeStyles((theme) => ({
   root: {
     width: "210px",
     position: "relative",
@@ -85,11 +86,11 @@ export function WishTile(props) {
   const { userState } = useLogin();
   const { productsState, productsDispatch } = useProduct();
 
-  const handleAddToCart = product => {
+  const handleAddToCart = (product) => {
     setLoading(true);
     userState.token
       ? addItemToCart({ _id: product._id, quantity: 1 })
-          .then(res => {
+          .then((res) => {
             let cart = [];
             if (productsState?.cartItems) {
               cart = productsState?.cartItems;
@@ -102,15 +103,15 @@ export function WishTile(props) {
               payload: cart,
             });
             handleRemoveFromWishlist(product);
-            setMessage(prevState => ({
+            setMessage((prevState) => ({
               ...prevState,
               message: "Product moved to bag.",
               type: "success",
             }));
             setLoading(false);
           })
-          .catch(err => {
-            setMessage(prevState => ({
+          .catch((err) => {
+            setMessage((prevState) => ({
               ...prevState,
               message: "Something went wrong please try again",
               type: "error",
@@ -120,16 +121,16 @@ export function WishTile(props) {
       : history.push("/login");
   };
 
-  const handleRemoveFromWishlist = product => {
+  const handleRemoveFromWishlist = (product) => {
     removeItemFromWishlist({ _id: product._id })
-      .then(res => {
+      .then((res) => {
         productsDispatch({
           type: "REMOVE_WISHLIST_ITEMS",
           payload: product,
         });
       })
-      .catch(err => {
-        setMessage(prevState => ({
+      .catch((err) => {
+        setMessage((prevState) => ({
           ...prevState,
           message: "Something went wrong please try again",
           type: "error",

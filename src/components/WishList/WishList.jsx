@@ -12,7 +12,7 @@ export const WishList = () => {
   const loadList = () => {};
   useEffect(
     () => {
-      loadList();
+      loadList(); //trying load the list without causing any side effect
     },
     // eslint-disable-next-line
     []

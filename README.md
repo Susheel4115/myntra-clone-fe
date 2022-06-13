@@ -2,8 +2,6 @@
 
 Cloudflare deployment [URL](https://myntra-clone-fe.pages.dev/)
 
-
-
 ## Description
 
 This project is a clone of Mynta WebApp.
@@ -16,6 +14,7 @@ This project is a clone of Mynta WebApp.
 - Seperate section for men/women/kids
 - JWT authentication.
 - Formik and yup for form handling.
+
 ## Tech Stack
 
 - React
@@ -23,3 +22,6 @@ This project is a clone of Mynta WebApp.
 - Mongoose
 - MongoDB
 
+## Improvement
+
+-Trying to convert this logic to redux predictable state container

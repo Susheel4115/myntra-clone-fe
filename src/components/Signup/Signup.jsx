@@ -13,6 +13,7 @@ import { Header } from "../../components";
 
 import { signup } from "../../apis/userService";
 
+//creating a custom hook with my own styling
 const useStyles = makeStyles((theme) => ({
   backdrop: {
     color: "#fff",

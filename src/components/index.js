@@ -28,3 +28,5 @@ export { AddressForm } from "./Address/AddressForm";
 
 export { Login } from "./Login/Login";
 export { SignUp } from "./Signup/Signup";
+
+//distribution file every component

@@ -2,17 +2,16 @@ import axios from "axios";
 // import { useLogin } from "../context";
 
 const axiosClient = axios.create({
-  baseURL: `https://myntra-back.herokuapp.com/`,
+  baseURL: `https://myntra-back.herokuapp.com/`, //sample link for web view with views from backend
 
-  // `https://myntra-back.herokuapp.com/`,
-  // `http://localhost:5500/`,
-
-  // baseURL: `http://13.126.37.93:5500/`,
+  //setting headers be careful while deployment
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json",
   },
 });
+
+//do something with this interceptors before the preflight request
 axiosClient.interceptors.request.use(
   function (request) {
     let token = JSON.parse(localStorage.getItem("hint"));
